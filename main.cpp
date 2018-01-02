@@ -21,7 +21,9 @@ int main(){
     std::cout<<"w: "<<w<<std::endl;
     std::cout<<"w==w: "<<(w==w)<<std::endl;
     std::cout<<"w: "<<(r1.getreal())<<std::endl;
+    std::cout<<"w: "<<(r1.getimag())<<std::endl;
     w=r1/r2;
-    std::cout<<"w: "<<w<<std::endl;
+    r1/=r2;
+    std::cout<<"w: "<<r1<<std::endl;
     return 0;}
 
