@@ -76,9 +76,9 @@ bool complex::operator ==(complex s2){
     return(this->real==s2.getreal() && this->imag==s2.getimag())?1:0;}
 
 
-std::ostream& operator <<(std::ostream &s,complex &b){
-    s<<"wynik = "<<b.real<<((b.imag >= 0) ? "+" :"")<<b.imag<<"i";
-    return s;
+std::ostream& operator <<(std::ostream &so,complex &s1){
+    so<<"wynik = "<<s1.real<<((s1.imag >= 0) ? "+" :"")<<s1.imag<<"i";
+    return so;
 }
 
 void complex::operator =(complex w){
