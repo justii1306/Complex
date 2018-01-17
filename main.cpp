@@ -1,23 +1,15 @@
-#include <stdio.h>
-#include "complex.h"
+#include "test.h"
+#include <string.h>
+#include <ctype.h>
 
-int main(){
-    complex r1(7.1,5.1);
-    complex r2(8.1,-3.1);
-    std::cout<<"r1: "<<r1<<std::endl;
-    std::cout<<"r2: "<<r2<<std::endl;
-    complex w=r1+r2;
-    std::cout<<"w: "<<w<<std::endl;
-    w=w-r2;
-    std::cout<<"w: "<<w<<std::endl;
-    w=r1*r2;
-    std::cout<<"w: "<<w<<std::endl;
-    w+=r2;
-    std::cout<<"w: "<<w<<std::endl;
-    w-=r2;
-    std::cout<<"w: "<<w<<std::endl;
-    w*=r1;
-    std::cout<<"w: "<<w<<std::endl;
-    std::cout<<"w==w: "<<(w==w)<<std::endl;
-    return 0;}
-
+main(){
+	teskt t1=("To jest tekst");
+	teskt t2=("TEKST");
+	Tekst t3,t4;
+	t4=t3;
+	t3[3]=t3[6]='X'
+	std::count<<t3<<std::endl;
+	if (t3==t1)std::count<<"t1==t3";else std::cout <<"t1!=t3";
+	if (t4==t1)std::count<<"t1==t4";else std::cout <<"t1!=t4";
+	return 0;	
+}
