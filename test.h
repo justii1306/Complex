@@ -5,9 +5,9 @@ class tekst{
 	public:
 	tekst(char[]);
 	~test();
-	friend tekst operator +(string, const tekst&);
+	friend tekst operator +(char[], const tekst&);
 	bool operator ==(const tekst&, const tekst&);
-	test& operator=(const test& dot);
+	test& operator=(const test&);
 	privite:
 	char napis[];
 	int len;
