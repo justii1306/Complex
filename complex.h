@@ -1,23 +1,24 @@
 #include <stdio.h>
 #include <iostream>
 
+
 class complex
 {
 public:
-complex(float r, float i);
+complex(float r=0.0f, float i=0.0f);
+float getreal();
+float getimag();
 friend complex operator +(complex,complex);
 friend complex operator -(complex,complex);
 friend complex operator *(complex,complex);
-//complex operator /();
+friend complex operator /(complex,complex);
 complex& operator +=(complex&);
 complex& operator -=(complex&);
 complex& operator *=(complex&);
-//complex operator /=(complex);
+complex& operator /=(complex&);
 bool operator ==(complex);
-complex operator =(complex);
+void operator =(complex);
 friend std::ostream& operator <<(std::ostream &s, complex &b);
-float getreal();
-float getimag();
 float amplituda();
 float faza();
 private:
