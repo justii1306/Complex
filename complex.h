@@ -5,20 +5,20 @@
 class complex
 {
 public:
-complex(float r=0.0f, float i=0.0f);
-float getreal();
-float getimag();
-friend complex operator +(complex,complex);
-friend complex operator -(complex,complex);
-friend complex operator *(complex,complex);
-friend complex operator /(complex,complex);
-complex& operator +=(complex&);
-complex& operator -=(complex&);
-complex& operator *=(complex&);
-complex& operator /=(complex&);
-bool operator ==(complex);
-void operator =(complex);
-friend std::ostream& operator <<(std::ostream &s, complex &b);
+complex(float r=0.0, float i=0.0);
+float getreal() const;
+float getimag() const;
+friend complex operator +(const complex,const complex);
+friend complex operator -(const complex,const complex);
+friend complex operator *(const complex,const complex);
+friend complex operator /(const complex,const complex);
+complex& operator +=(const complex&);
+complex& operator -=(const complex&);
+complex& operator *=(const complex&);
+complex& operator /=(const complex&);
+bool operator ==(const complex);
+complex& operator =(const complex);
+friend std::ostream& operator <<(std::ostream &s, const complex &b);
 float amplituda();
 float faza();
 private:
